@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+            ABS COLLEGE OF ENGG
+        </title>
+        <script>
+            function myFunction()
+            {
+                 var first = document.getElementById("first").value;
+                 var last = document.getElementById("last").value;
+                 var name;
+                 name = first + " "+ last;
+                 document.getElementById("para1").innerHTML = name;
+                var street = document.getElementById("street").value;
+                 var line = document.getElementById("line").value;
+                 var address;
+                 address = street + "," + line;
+                 document.getElementById("para2").innerHTML = address;
+                 var gender = document.getElementsByName("gender").value;
+                document.getElementsByName("para3").innerHTML = gender;
+                  var city = document.getElementById("city").value;
+                 document.getElementById("para4").innerHTML = city; 
+                 var contact = document.getElementById("contact").value;
+                 document.getElementById("para5").innerHTML = contact;
+                 var ten = document.getElementById("tenth").value;
+                 document.getElementById("para6").innerHTML = ten;
+                 var twelve = document.getElementById("twelfth").value;
+                 document.getElementById("para7").innerHTML = twelve;
+                
+            }
+        </script>
+	</head>
+	<body bgcolor="DarkTurquoise" align = "center"> 
+     <H4>REGISTER YOURSELF!!</H4>
+        <table align = "center">
+      
+        <tr><td>First Name</td><td><input type ="text" id= "first"/></td>
+        <td>Last Name</td><td><input type ="text" id = "last"/></td></tr>
+        </table>
+        <table align = "center">
+      
+        <tr><td>Street Name</td><td><input type ="text" id= "street"/></td>
+        <td>Address line2</td><td><input type ="text" id = "line"/></td></tr>
+     <tr><td>Gender</td><td>Male<input type ="radio" name ="gender" value="male"></td>
+    <td>Female<input type ="radio" name ="gender" value="female"></td></tr>
+     
+    <tr><td><label for="city">City:</label></td>
+  <td><select name="city" id="city">
+  <option value="Mumbai">Mumbai</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Bangalore">Bangalore</option>
+</select></td></tr>
+<tr><td>Contact</td><td><input type ="text" id="contact"></td></tr>
+<tr><td>Marks Obtained in Xth </td><td><input type ="text" id="tenth"></td></tr>
+<tr><td>Marks Obtained in XIIth </td><td><input type ="text" id="twelfth"></td></tr>
+ <tr><td></td><td><button onclick="myFunction()">Submit</button> </td>  </tr>  
+        
+</table>
+
+<!--Name<p id = "para1"></p>
+Address:<p id = "para2"></p>
+Gender:<p id = "para3"></p> 
+City<p id = "para4"></p> 
+Contact<p id = "para5"></p>
+Marks in Xth<p id = "para6"></p>
+Marks in XIIth<p id = "para7"></p>-->
+<p id = "para1"></p>
+<p id = "para2"></p>
+<p id = "para3"></p> 
+<p id = "para4"></p> 
+<p id = "para5"></p>
+<p id = "para6"></p>
+<p id = "para7"></p>
+    </body>
+</html>
